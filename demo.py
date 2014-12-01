@@ -14,7 +14,7 @@ def hello_world():
         ret = dict()
         ret['Date'] = Date
         ret['Consume'] = Consume
-        return json.dumps(ret)
+        return json.dumps(ret,ensure_ascii=False)
 
 
 if __name__ == '__main__':
