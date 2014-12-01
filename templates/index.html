@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="zh-CN">
     <meta charset="UTF-8">
     <title>查询</title>
     <!-- 新 Bootstrap 核心 CSS 文件 -->
@@ -37,15 +37,13 @@
     </div>
 </div>
 <script type="text/javascript">
-$('#postData').bind('click', function () {
-
-    $.post('/',
-            {Date: $('#Date').val(),
-                Consume: $('#Consume').val()}, function (data) {
-                $('#RetContent').html(data);
-
-            });
-});
+    $('#postData').bind('click', function () {
+        $.post('/',
+                {Date: $('#Date').val(),
+                    Consume: $('#Consume').val()}, function (data) {
+                    $('#RetContent').html(data);
+                });
+    });
 </script>
 </body>
 </html>
