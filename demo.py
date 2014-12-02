@@ -4,6 +4,7 @@ from flask import Flask, render_template, request, json
 app = Flask(__name__)
 app.Debug = True
 
+
 @app.route('/', methods=['GET', 'POST'])
 def hello_world():
     if request.method == 'GET':
@@ -14,7 +15,7 @@ def hello_world():
         ret = dict()
         ret['Date'] = Date
         ret['Consume'] = Consume
-        return json.dumps(ret,ensure_ascii=False)
+        return json.dumps(ret, ensure_ascii=False)
 
 
 if __name__ == '__main__':
